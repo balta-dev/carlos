@@ -1,0 +1,31 @@
+program
+title 'Proto';
+def m,n array[6],l,j,aux;
+{
+       l=1;
+       while l <= 6 {
+        read('Ingrese un elemento',m);
+         n[l]=m;
+         l=l+1
+       };
+        l=1;
+
+        while l <= 5{
+              j=1;
+              while j <= 6-l {
+                     if n[j] > n[j+1] {
+                            aux = n[j];
+                            n[j] = n[j+1];
+                            n[j+1] = aux
+                     };
+                 j=j+1
+              };
+            l=l+1
+        };
+        l=1;
+       while l <= 6 {
+       print(n[l]);
+         l=l+1
+       }
+}
+

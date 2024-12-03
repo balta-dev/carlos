@@ -1,0 +1,31 @@
+program
+title 'Proto';
+def m,n array[100],l,resultado,indice;
+{
+       l=1;
+       read('cantidad de elementos del vector :',indice);
+       while l <= indice
+       { read('Ingrese elemento',m);
+         n[l]=m;
+         l=l+1
+        };
+        l=1;
+        resultado = 0;
+        while l <= indice
+       {
+              resultado = resultado + pot(n[l],2);
+              l=l+1
+        };
+       resultado = root(resultado,2);
+       l=1;
+       while l <= indice
+       { n[l]=n[l]/resultado;
+         l=l+1
+        };
+        l=1;
+       while l <= indice {
+       print(n[l]);
+         l=l+1
+       }
+}
+

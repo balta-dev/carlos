@@ -1,0 +1,27 @@
+program
+title 'Proto';
+def m, n array [7],l,prom,vari;
+{
+       l=1;
+       while l <= 7
+       { read('Ingrese N°',m);
+         n[l]=m;
+         l=l+1
+        };
+        l=1;
+        while l<=7
+        { prom=prom+n[l];
+          l=l+1
+         };
+         prom=prom/7;
+         print(prom);
+
+        l=1;
+        while l <= 7
+        { vari = pot(n[l]-prom , 2) + vari;
+          l=l+1
+        };
+        vari=vari/6;
+        print(vari)
+}
+

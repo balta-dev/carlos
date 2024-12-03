@@ -1,0 +1,23 @@
+program
+title 'Proto';
+def m,n array[100],l, o array[100],resultado,indice;
+{
+       l=1;
+       read('cantidad de elementos de los vectores',indice);
+       while l <= indice
+       { read('Ingrese Comp de V1',m);
+         n[l]=m;
+         read('Ingrese Comp de V2',m);
+         o[l]=m;
+         l=l+1
+        };
+        l=1;
+        resultado = 0;
+        while l <= indice
+       {
+              resultado = resultado + pot(o[l] - n[l],2);
+              l=l+1
+        };
+       resultado = root(resultado,2);
+       print(resultado)
+}
