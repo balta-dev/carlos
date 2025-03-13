@@ -1,0 +1,84 @@
+Program
+
+title carlos; //esto es algo opcional//
+
+const g array[3] = 5467 3546 3456;
+const pi = 3.14159265354;
+def c array[3];  //variables reales no van definidas
+
+{
+    read('texto nose',a);           //lectura, lee a imprime texto nose
+    a= a*2;                         //asignación
+    print('a');                     //escritura
+    if (a<0)
+    {
+        print(a,' es menor q cero')
+    }
+    else 
+    {
+        print(a,' es mayor o igual q cero')
+    }
+    While (a<0)   
+    {
+        print('a');
+        a= a +1;
+    }
+
+    if ( (a<0) & (b>5) ) {}
+
+    a = 6*3;
+    a = 4/2;
+    a = pot(a,b);                    //a^b
+    a = sqrt(a,b);                   //a^(1/b)
+
+    c[1] = 5;
+    print ('a',a,'es el valor', c);  // c es un arreglo
+}
+
+GRAMATICA
+<Lenguaje> -> "Program" <Titulo> <Definiciones> "{"<Cuerpo>"}" 
+<Titulo> -> "title" "cad" ";" | e
+<Definiciones> -> "def" "id" "array" "[" "N_nat" "]" ";" <Definiciones> | "const" "id" "=" "Creal" <Definiciones> | e      
+<Cuerpo> -> <Sent> ";" <Cuerpo> | <Sent>
+<Sent> -> <Asig> | <Condi> | <Leer> | <Imprimir> | <Ciclo>
+<Asig> -> <Asig_V> | <Asig_N> 
+<Asig_V> -> "id" "[" <opArit> "]" "=" <opArit>
+<Asig_N> -> "id" "=" <opArit>
+<opArit> -> <opArit> "+" <OA2> | <opArit> "-" <OA2> | <OA2>
+<OA2> -> <OA2> "*" <OA3> | <OA2> "/" <OA3> | <OA3> 
+<OA3> -> <OA3> <Potencia> | "id" | "const" | "Creal" | "(" <opArit> ")"
+<Potencia> -> "pot" "(" "<Num_p>" ")" | "sqrt" "(" "<Num_p>" ")"
+<Num_p> -> <opArit> "," <opArit>                               // base, exponente 
+<Condi> -> "If" "("<valor_B>")" "{"<Cuerpo>"}" | "If" "("valor_B ")" "{"<Cuerpo>"}" else "{"<Cuerpo>"}"
+<valor_B> ->"!" <OL2> | <OL2>
+<OL2> -> <OL2> "&" <OL3> | <OL3> 
+<OL3> -> <OL3> "|" <opArit> <Relacional> <opArit>  | "(" <valor_B> ")"
+<Relacional> -> ">" | "<" | "==" | "!=" | ">=" | "<=" 
+<Leer> -> "read" "(" <Mostrar> ")"
+<Imprimir> -> "print" "(" <Mostrar> ")"
+<Mostrar> -> "id" | ' "cad" ' | <Mostrar>, "'" "cad" "'"  | <Mostrar>, "id"
+<Ciclo> -> "while" "(" "<valor_B>" ")" "{" "<Cuerpo>" "}" 
+
+
+
+
+
+
+
+E -> E + T | T
+T -> T * id | id | (E) * (E) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

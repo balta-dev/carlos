@@ -1,0 +1,62 @@
+
+
+Proyecto Integrador
+   Sintaxis y Semántica de los Lenguajes
+
+
+
+Objetivo
+Construir un Intérprete para el lenguaje que se especifica a continuación
+
+
+Características del lenguaje
+
+    1. Un programa está compuesto por una sección de declaración de variables y un cuerpo.
+    2. El cuerpo es una secuencia de sentencias entre algún tipo de separadores, ya sean palabras reservadas (como begin y end u otras) o símbolos (como llaves u otros)
+    3. Existen dos tipos de variables: reales y arreglos de reales. Los arreglos deben definir su tamaño (100 elementos como máximo). Todas las variables tienen que se declaradas.
+    4. Una sentencia puede ser una asignación, una lectura, una escritura, un Si-Entonces-Sino, un ciclo tipo While o un ciclo tipo For. 
+    5. El lado derecho de una asignación es una expresión aritmética sobre números reales, incluyendo suma, resta, producto, división, potencia y raíz. Se deben definir prioridades entre los operadores y su asociatividad debe ser por izquierda. 
+    6. Una lectura contiene una cadena que se mostrará por pantalla y la variable a leer. 
+    7. Una escritura contiene una lista de una o más cadenas, expresiones aritméticas, arreglos completos.      ARREGLOS COMPLETOS ES MOSTRAR TODO O MOSTRAR TODO A LOS QUE TENGAN TODAS LAS CACILLAS DEFININDAS
+    8. Las condiciones del Mientras y el Si deben permitir operadores lógicos (además de los relacionales). Se deben definir prioridades entre los operadores lógicos.
+    9. Se deben por utilizar además de las constantes reales, constantes arreglos. De esta manera se permite la asignación de una constante arreglo a una variable.
+    10. Se permiten hacer modificaciones o agregados a esta descripción, siempre que tengan su justificación.
+
+
+
+Actividades a realizar
+
+     1. Elegir un nombre para su lenguaje.  
+            por ahora M.B.B.E
+     2. Definición de la sintaxis mediante la CFG correspondiente.
+     3. Definición de los componentes léxicos (terminales de la CFG) mediante expresiones regulares (cuando su estructura lo justifique)
+     4. Autómatas determinísticos para los componentes léxicos complejos.
+     5. Especificación de la semántica asociada a cada variable de la CFG.
+     6. Construcción del Intérprete:
+         6.1. Analizador Léxico.
+         6.2. Analizador Sintáctico.
+         6.3. Evaluador (ejecuta el programa, en base al árbol de análisis sintáctico).
+     7. Escribir un programa en este lenguaje que ingrese N números en un arreglo y calcule su promedio y su varianza.
+     8. Escribir un programa que lea dos arreglos del mismo tamaño y calcule la distancia euclidiana entre ambos.
+     9. Escribir otro programa definido por el grupo. Escribir el enunciado, programar la solución y realizar pruebas.
+
+Notas adicionales:
+    • Cada grupo estará formado por hasta 4 integrantes.
+    • Cada integrante debe llevar un registro de su participación (una lista incluyendo día, hora de inicio, hora de fin y tarea realizada, por cada vez que trabajó en el proyecto).
+    • Para el desarrollo del proyecto pueden compartir código a través de una carpeta compartida en Dropbox o Drive, utilizar herramientas profesionales tales como Git y algún repositorio gratuito (Github, por ejemplo), o buscar algún otro método similar.
+
+
+Entregables
+
+    1. Documentación del programa: qué hace y cómo se usa.
+    2. Definición formal de la sintaxis mediante una gramática en notación BNF.
+    3. Gramática modificada LL(1) y TAS.
+    4. Descripción de la semántica asociada.
+    5. Programas fuente.
+    6. Programas escritos en este nuevo lenguaje, correspondientes a los puntos 7, 8 y 9 de las actividades a realizar.
+
+Observaciones:
+    • El proyecto debe estar entregado y aprobado para acceder a la Promoción o la aprobación por examen final. 
+    • El programa puede realizarse en cualquier lenguaje imperativo. Los que tienen aprobada la materia Paradigmas de Programación pueden utilizar cualquier lenguaje de programación, bajo cualquier paradigma, respetando las características del paradigma utilizado.
+    • Fecha de Vencimiento de la entrega para promoción: lunes 24/07/2023 (ante algún retraso, consultar)
+    • No es necesario presentar el proyecto para regularizar. En tal caso, se debe presentar antes de rendir el final.

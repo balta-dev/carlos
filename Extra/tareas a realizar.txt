@@ -1,0 +1,11 @@
+1 inicializar tabla de simbiolos
+2 otro que coloque todas las palabras reservadas
+3 chequee identificadores y si no estan, guardarlos y le pone el id. pero si ya estan, devolver el lexema, nombre de la funcion :=InstalarEnTS
+	la funcion siempre devuelve id ya sea si lo crea o si ya esta guardado
+4 hacer una funcion que identifique simbiolos especiales los unicos que no son unitarios son => =< .nombre de la funcion EsSimboloEspecial
+5 preguntarle a pascal que hacemos con el codigo asqui 127 
+
+Machine
+Basic
+Building
+Esparrago  // o engenir

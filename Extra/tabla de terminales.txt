@@ -1,0 +1,26 @@
+Program
+print
+title 
+;       fin de linea
+//      inicio y fin de comentar
+{       para iniciar o finalizar una parte del programa
+}
+[       para los vectores
+]
+(       para parametros o par preoridad
+)
+'       inicio y fin de string
+=       asignacion
++       componetes aritmeticos 
+-
+/
+*
+&       aoperador logico and
+!       operador logico not
+|       operador logico or 
+>
+<
+>=
+<=
+==      operador logico de igualdad
+!=
